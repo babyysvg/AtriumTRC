@@ -1,0 +1,173 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\1000-2300.jpg",
+      "PackagePath": "staticwebassets\\images\\1000-2300.jpg"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\12storezzPic1.jpg",
+      "PackagePath": "staticwebassets\\images\\12storezzPic1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\12storezzPic2.jpg",
+      "PackagePath": "staticwebassets\\images\\12storezzPic2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\12storezzPic3.jpg",
+      "PackagePath": "staticwebassets\\images\\12storezzPic3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\12storezzPic4.jpg",
+      "PackagePath": "staticwebassets\\images\\12storezzPic4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\12storezzPic5.jpg",
+      "PackagePath": "staticwebassets\\images\\12storezzPic5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\12storezzPic6.jpg",
+      "PackagePath": "staticwebassets\\images\\12storezzPic6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\12storezzPic6.png",
+      "PackagePath": "staticwebassets\\images\\12storezzPic6.png"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\12storezzPic7.jpg",
+      "PackagePath": "staticwebassets\\images\\12storezzPic7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\5c740544370f2c95628b458d.jpg",
+      "PackagePath": "staticwebassets\\images\\5c740544370f2c95628b458d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\akhmadullinaPic1.jpg",
+      "PackagePath": "staticwebassets\\images\\akhmadullinaPic1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\akhmadullinaPic2.jpg",
+      "PackagePath": "staticwebassets\\images\\akhmadullinaPic2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\akhmadullinaPic3.jpg",
+      "PackagePath": "staticwebassets\\images\\akhmadullinaPic3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\akhmadullinaPic4.jpg",
+      "PackagePath": "staticwebassets\\images\\akhmadullinaPic4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\boggi1.webp",
+      "PackagePath": "staticwebassets\\images\\boggi1.webp"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\boggi2.webp",
+      "PackagePath": "staticwebassets\\images\\boggi2.webp"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\boggi3.webp",
+      "PackagePath": "staticwebassets\\images\\boggi3.webp"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\boggi4.webp",
+      "PackagePath": "staticwebassets\\images\\boggi4.webp"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\boggi5.webp",
+      "PackagePath": "staticwebassets\\images\\boggi5.webp"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\collet.jpeg",
+      "PackagePath": "staticwebassets\\images\\collet.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\collet1.jpg",
+      "PackagePath": "staticwebassets\\images\\collet1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\collet2.jpg",
+      "PackagePath": "staticwebassets\\images\\collet2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\collet3.jpg",
+      "PackagePath": "staticwebassets\\images\\collet3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\collet4.jpg",
+      "PackagePath": "staticwebassets\\images\\collet4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\product1p1.jpg",
+      "PackagePath": "staticwebassets\\images\\product1p1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\product1p2.jpg",
+      "PackagePath": "staticwebassets\\images\\product1p2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\product2p1.jpg",
+      "PackagePath": "staticwebassets\\images\\product2p1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\product2p2.jpg",
+      "PackagePath": "staticwebassets\\images\\product2p2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\product3p1.jpg",
+      "PackagePath": "staticwebassets\\images\\product3p1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\product3p2.jpg",
+      "PackagePath": "staticwebassets\\images\\product3p2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\product4p1.jpg",
+      "PackagePath": "staticwebassets\\images\\product4p1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\product4p2.jpg",
+      "PackagePath": "staticwebassets\\images\\product4p2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\product5p1.jpg",
+      "PackagePath": "staticwebassets\\images\\product5p1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\product5p2.jpg",
+      "PackagePath": "staticwebassets\\images\\product5p2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\product6p1.jpg",
+      "PackagePath": "staticwebassets\\images\\product6p1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\images\\product6p2.jpg",
+      "PackagePath": "staticwebassets\\images\\product6p2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\babyw\\Desktop\\финал веб\\илья\\OnlineStore\\wwwroot\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\js\\scripts.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Atriuum.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Atriuum.props",
+      "PackagePath": "build\\Atriuum.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Atriuum.props",
+      "PackagePath": "buildMultiTargeting\\Atriuum.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Atriuum.props",
+      "PackagePath": "buildTransitive\\Atriuum.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

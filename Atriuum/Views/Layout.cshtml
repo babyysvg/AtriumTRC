@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Заголовок"] - Атриум</title>
+
+    <!-- Встроенные стили -->
+    <style>
+        /* Общие стили */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #212529;
+            margin: 0;
+        }
+
+        /* Шапка сайта */
+        header {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+            header img {
+                height: 100px;
+                vertical-align: middle;
+            }
+
+            header h1 {
+                display: inline-block;
+                margin-left: 15px;
+                font-size: 24px;
+            }
+
+            header table {
+                width: 100%;
+            }
+
+                header table td {
+                    padding: 5px;
+                    text-align: center;
+                }
+
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            background-color: #2c3e50;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-size: 16px;
+        }
+
+            button:hover {
+                background-color: #0056b3;
+            }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Основной контент */
+        .main-content {
+            display: flex;
+            min-height: 80vh;
+            padding: 20px;
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-left: 20px;
+        }
+
+        /* Навигационные панели */
+        .navbar, .sidebar {
+            padding: 15px;
+            background-color: #495057;
+            color: white;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar {
+            min-width: 200px;
+        }
+
+        /* Модальное окно для корзины */
+        #cartModal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            justify-content: center;
+            align-items: center;
+        }
+
+            #cartModal .modal-content {
+                background: #ffffff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+                width: 400px;
+                text-align: center;
+                position: relative;
+                left: 40%;
+                top: 40%
+            }
+
+                #cartModal .modal-content h2 {
+                    margin-bottom: 20px;
+                    font-size: 24px;
+                }
+
+                #cartModal .modal-content .close {
+                    cursor: pointer;
+                    font-size: 20px;
+                    color: #333;
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                }
+
+        /* Нижний колонтитул */
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #343a40;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка сайта -->
+   <header style="background-color: #f8f9fa; padding: 0; height: 80px; border-bottom: 1px solid #ddd; display: flex; align-items: center; justify-content: space-between;">
+        <!-- Логотип по центру -->
+        <div style="flex: 1; display: flex; justify-content: center;">
+            <img src="https://www.atrium.su/wp-content/uploads/2024/09/logotype_atrium.svg" alt="ЛОГОТИП" style="height: 60px; border-radius: 8px;">
+        </div>
+
+        <!-- Кнопки по правому краю -->
+        <div style="display: flex; align-items: center;">
+            @if (ViewData["clientName"] == null)
+            {
+                <button style="margin-right: 10px; padding: 10px 20px; background-color: #2c3e50; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                    <a href="@Url.Action("Login", "Client")" style="text-decoration: none; color: white;">Войти</a>
+                </button>
+                <button style="padding: 10px 20px; background-color: #2c3e50; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                    <a href="@Url.Action("Create", "Client")" style="text-decoration: none; color: white;">Регистрация</a>
+                </button>
+            }
+            else
+            {
+                <h2 style="margin: 0; font-size: 20px; color: #555;">@ViewData["clientName"]</h2>
+                <button onclick="showCartModal()" style="margin-right: 10px; padding: 10px 20px; background-color: #cc7722; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                    Корзина (<span id="cart-count" class="cart-count" style="font-weight: bold;">0</span>)
+                </button>
+                <button style="margin-right: 10px; padding: 10px 20px; background-color: #2c3e50; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                    <a href="@Url.Action("Feedback", "Client")" style="text-decoration: none; color: white;">Оставить отзыв</a>
+                </button>
+                <button style="padding: 10px 20px; background-color: #800000; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                    <a href="@Url.Action("Logout", "Client")" style="text-decoration: none; color: white;">Выйти</a>
+                </button>
+            }
+        </div>
+    </header>
+
+
+    <!-- Навигационная панель -->
+    @Html.Partial("~/Views/Shared/navbar.cshtml")
+
+    <!-- Основной контент страницы -->
+    <div class="main-content">
+        <!-- Боковая панель -->
+        @Html.Partial("~/Views/Shared/sidebar.cshtml")
+        <div class="content">
+            @RenderBody()
+        </div>
+    </div>
+
+    <!-- Модальное окно для корзины -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideCartModal()">&times;</span>
+            <h2>Ваша корзина</h2>
+            <div id="cartItems">
+                <!-- Содержимое корзины будет загружено здесь -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Футер сайта -->
+    @Html.Partial("~/Views/Shared/footer.cshtml")
+
+    <!-- Подключение файлов JavaScript -->
+    <script src="~/js/scripts.js"></script>
+</body>
+</html>

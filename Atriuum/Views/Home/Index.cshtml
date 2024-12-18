@@ -1,0 +1,92 @@
+﻿@{
+    Layout = "~/Views/Layout.cshtml";
+}
+<style>
+    .slider-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .slider {
+        position: relative;
+        width: 70%;
+        max-width: 800px;
+        overflow: hidden;
+        /*    border: 1px solid #ddd;*/
+    }
+
+    .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Центрирует по горизонтали */
+        align-items: center; /* Центрирует по вертикали */
+        flex: 0 0 100%;
+        text-align: center;
+        height: 400px; /* Задайте фиксированную высоту слайда */
+        position: relative; /* Для адаптации к тексту ниже */
+        overflow: hidden; /* Скрывает все, что выходит за границы контейнера */
+    }
+
+    .controls{
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
+
+<!-- Контент -->
+<div class="content">
+    <h1 align="center">Атриум</h1>
+    <p>
+        <b>ТРЦ Ариум</b> — это современный торгово-развлекательный центр, где шопинг, развлечения и отдых объединяются в одном месте. Мы предлагаем уникальные магазины, вкусные рестораны и увлекательные развлекательные зоны для всей семьи.
+    </p>
+    <p>
+        В нашем центре каждый посетитель сможет найти <b>что-то по душе:</b> от модной одежды и аксессуаров до разнообразных услуг и современных технологий. Мы стремимся создать комфортную и приятную атмосферу для всех гостей.
+    </p>
+
+    <h2></h2>
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="https://images.cdn-cian.ru/images/8/513/659/956315875-6.jpg" alt="Image 1">
+                </div>
+                <div class="slide">
+                    <img src="https://www.hotelsultan.ru/files/article/shop/atrium.jpg" alt="Image 2">
+                </div>
+            </div>
+            <div class="controls">
+                <button onclick="prevSlide()">&#10094;</button>
+                <button onclick="nextSlide()">&#10095;</button>
+            </div>
+        </div>
+    </div>
+
+    <h2>Наши основные зоны</h2>
+    <table border="1" cellpadding="10" cellspacing="5">
+        <tr>
+            <td rowspan="3"><h3>Развлекательные зоны и магазины</h3></td>
+            <td colspan="2" align="center"><h3>Модные бутики</h3></td>
+        </tr>
+        <tr>
+            <td>Одежда и аксессуары</td>
+            <td>Ювелирные изделия</td>
+        </tr>
+        <tr>
+            <td>Технологические новинки</td>
+            <td>Косметика и парфюмерия</td>
+        </tr>
+    </table>
+
+    <h2>Факты о нашем центре:</h2>
+    <ul>
+        <li>Более 200 магазинов и бутиков на любой вкус</li>
+        <li>Разнообразные рестораны и кафе</li>
+        <li>Развлекательные зоны для всей семьи</li>
+        <li>Удобная парковка и доступность общественным транспортом</li>
+    </ul>
+</div>
